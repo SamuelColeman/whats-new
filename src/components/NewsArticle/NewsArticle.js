@@ -4,10 +4,10 @@ import './NewsArticle.css';
 const NewsArticle = (props) => {
 	return (
 		<div>
-			<p>{props.img}</p>
+			<img src={props.img}></img>
 			<h2>{props.headline}</h2>
 			<p>{props.description}</p>
-			<p>{props.url}</p>
+			<a href={props.url}>Full Article</a>
 		</div>
 	)
 }
