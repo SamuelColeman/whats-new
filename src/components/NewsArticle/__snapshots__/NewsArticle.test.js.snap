@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticle should match the snapshot 1`] = `
+<div
+  className="newsArticle"
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Mops_oct09_cropped2.jpg"
+  />
+  <h2>
+    Pugs Take Over
+  </h2>
+  <p>
+    Pugsly wins presidential race.
+  </p>
+  <a
+    href="https://en.wikipedia.org/wiki/Pug"
+  >
+    Full Article
+  </a>
+</div>
+`;
