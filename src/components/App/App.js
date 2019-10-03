@@ -24,10 +24,18 @@ class App extends Component {
     this.setState({news: this.news[category]});
   }
 
+  searchArticles = (input) => {
+    let upperInput = input.toUpperCase();
+    let articles = this.state.news.filter(article => {
+       return (article.headline.toUpperCase().includes(upperInput))
+    })
+    this.setState({ news: articles})
+  }
+
   render () {
     return (
       <div className="app">
-        <SearchForm className="searchForm" />
+        <SearchForm searchArticles={this.searchArticles} className="searchForm" />
         <section className="nav">
           <h1>What's New</h1>
           <Menu filterArticles={this.filterArticles}/>
