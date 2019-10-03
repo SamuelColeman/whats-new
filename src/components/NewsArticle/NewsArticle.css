@@ -1,9 +1,10 @@
 .newsArticle {
 	border: 1px solid black;
 	width: 50%;
+	background: gray;
 }
 
 img {
 	width: 100%;
-	height: 60%;
+	height: 50%;
 }

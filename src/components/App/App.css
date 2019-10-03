@@ -6,7 +6,7 @@
 
 .app {
   display: grid;
-  background: #FFFFFF;
+  background: navy;
   height: 100vh;
   text-align: center;
   width: 100%;
@@ -34,4 +34,8 @@
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
+}
+
+h1 {
+  color: white;
 }

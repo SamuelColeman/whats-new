@@ -7,17 +7,21 @@ import health from '../../data/health';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer.js';
 import SearchForm from '../SearchForm/SearchForm.js';
+import Menu from '../Menu/Menu.js';
 
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      local: local,
-      technology: technology,
-      entertainment: entertainment,
-      science: science,
-      health: health
+    this.news = {
+      local, technology, entertainment, science, health
     }
+    this.state = {
+      news: this.news.local
+    }
+  }
+
+  filterArticles = (category) => {
+    this.setState({news: this.news[category]});
   }
 
   render () {
@@ -26,14 +30,10 @@ class App extends Component {
         <SearchForm className="searchForm" />
         <section className="nav">
           <h1>What's New</h1>
-          <button type="button">Local News</button>
-          <button type="button">Technology</button>
-          <button type="button">Entertainment</button>
-          <button type="button">Science</button>
-          <button type="button">Health</button>
+          <Menu filterArticles={this.filterArticles}/>
         </section>
         <section className="newsContainer">
-          <NewsContainer news={this.state.local}/>
+          <NewsContainer news={this.state.news}/>
         </section>
       </div>
     );
