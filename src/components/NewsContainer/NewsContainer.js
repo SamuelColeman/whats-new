@@ -1,6 +1,5 @@
 import React from 'react';
 import './NewsContainer.css';
-// import App from '../App/App.js';
 import NewsArticle from '../NewsArticle/NewsArticle.js';
 
 const NewsContainer = (props) => {

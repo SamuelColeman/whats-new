@@ -5,9 +5,33 @@
 }
 
 .app {
-  display: flex;
+  display: grid;
   background: #FFFFFF;
   height: 100vh;
   text-align: center;
   width: 100%;
+  grid-template-areas: 
+		"nav search search" 
+		"nav article article"
+		"nav article article";
+	grid-template-columns: 35% auto;
+	grid-template-rows: 10% auto;
+}
+
+.searchForm {
+  grid-area: search;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsContainer {
+  grid-area: article;
+  max-height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
 }
