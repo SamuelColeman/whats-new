@@ -1,20 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchForm should match the snapshot 1`] = `
-<form>
+<form
+  autoComplete="off"
+>
   <input
     name="search"
     onChange={[Function]}
-    placeholder="Article"
+    placeholder="Search for news article here."
     type="text"
     value=""
   />
   <button
+    className="searchBtn"
     onClick={[Function]}
     onSubmit={[Function]}
     type="submit"
   >
-    Search
+    Search Now
   </button>
 </form>
 `;
