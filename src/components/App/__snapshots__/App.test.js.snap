@@ -12,7 +12,10 @@ exports[`App should match the snapshot 1`] = `
     className="nav"
   >
     <h1>
-      What's New
+      What's 
+      <span>
+        New?
+      </span>
     </h1>
     <Menu
       filterArticles={[Function]}
