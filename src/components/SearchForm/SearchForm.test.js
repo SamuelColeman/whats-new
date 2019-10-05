@@ -22,17 +22,17 @@ describe('SearchForm', () => {
 		expect(wrapper.state('search')).toEqual(mockEvent.target.value);
 	});
 
-	// it('should invoke updateSearch when the input value is changed', () => {
-	// 	wrapper.instance().updateSearch = jest.fn();
-	// 	// const mockEvent = { preventDefault: jest.fn() };
-	// 	wrapper.find('input').simulate('change', mockEvent);
-	// 	expect(wrapper.instance().updateSearch).toHaveBeenCalledWith(mockEvent);
-	// })
+	it('should invoke updateSearch when the input value is changed', () => {
+		wrapper.instance().updateSearch = jest.fn();
+		wrapper.instance().forceUpdate();
+		wrapper.find('input').simulate('change', mockEvent);
+		expect(wrapper.instance().updateSearch).toHaveBeenCalledWith(mockEvent);
+	})
 
-	// it('should invoke handleChange when the button is clicked', () => {
-	// 	wrapper.instance().handleChange = jest.fn();
-	// 	const mockEvent = { preventDefault: jest.fn() };
-	// 	wrapper.find('button').simulate('click', mockEvent);
-	// 	expect(wrapper.instance().handleChange).toHaveBeenCalledWith(mockEvent);
-	// })
+	it('should invoke handleChange when the button is clicked', () => {
+		wrapper.instance().handleChange = jest.fn();
+		wrapper.instance().forceUpdate();
+		wrapper.find('button').simulate('click', mockEvent);
+		expect(wrapper.instance().handleChange).toHaveBeenCalledWith(mockEvent);
+	})
 })  
