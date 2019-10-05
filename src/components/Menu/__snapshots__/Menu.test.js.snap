@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should match the snapshot 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Local News
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Technology
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Entertainment
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Science
+  </button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Health
+  </button>
+</Fragment>
+`;
