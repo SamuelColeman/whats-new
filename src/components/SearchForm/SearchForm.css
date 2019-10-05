@@ -1,0 +1,31 @@
+input {
+	width: 80%;
+  margin: 1% 0;
+  border: none;
+  background: #141527;
+  height: 6vh;
+  font-size: 20px;
+  color: white;
+}
+
+input:focus {
+	outline: 0;
+}
+
+form {
+	width: 100vh;
+}
+
+.searchBtn {
+	background: #B56AF0;
+	height: 4vh;
+  width: 16vh;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.searchBtn:hover {
+	background: #FFAD03;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 15px;
+}

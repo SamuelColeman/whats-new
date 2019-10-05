@@ -1,7 +1,7 @@
 .newsArticle {
-	border: 1px solid black;
-	width: 50%;
+	width: 48%;
 	background: gray;
+	margin: 1%;
 }
 
 img {
