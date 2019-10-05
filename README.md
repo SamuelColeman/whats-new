@@ -9,7 +9,7 @@ The Whats New project is my first solo project during Mod 3 at Turing School of 
 * CSS3
 * SASS
 * JavaScript
-* React
+* React/JSX
 * Snapshot/Enzyme/Jest
 
 ## Contributors
@@ -18,3 +18,5 @@ The Whats New project is my first solo project during Mod 3 at Turing School of 
 
 ## Screenshots
 
+![Screenshot1](screenshots/whatsnew_main.png)
+![Screenshot2](screenshots/whatsnew_search.png)
