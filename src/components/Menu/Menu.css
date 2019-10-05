@@ -1,0 +1,18 @@
+button {
+	height: 5%;
+  border: none;
+  margin: 2%;
+  background: #141527;
+  color: white;
+  font-size: 20px;
+}
+
+button:hover {
+	background: #FFAD03;
+	border-radius: 0 15px 15px 0;
+	box-shadow: 5px 5px 5px black;
+}
+
+button:focus {
+	outline: 0;
+}

@@ -37,7 +37,7 @@ class App extends Component {
       <div className="app">
         <SearchForm searchArticles={this.searchArticles} className="searchForm" />
         <section className="nav">
-          <h1>What's New</h1>
+          <h1>What's <span>New</span></h1>
           <Menu filterArticles={this.filterArticles}/>
         </section>
         <section className="newsContainer">

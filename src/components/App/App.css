@@ -6,7 +6,7 @@
 
 .app {
   display: grid;
-  background: navy;
+  background: #141527;
   height: 100vh;
   text-align: center;
   width: 100%;
@@ -14,7 +14,7 @@
 		"nav search search" 
 		"nav article article"
 		"nav article article";
-	grid-template-columns: 35% auto;
+	grid-template-columns: 20% auto;
 	grid-template-rows: 10% auto;
 }
 
@@ -26,6 +26,7 @@
   grid-area: nav;
   display: flex;
   flex-direction: column;
+  padding: 9%;
 }
 
 .newsContainer {
@@ -38,4 +39,9 @@
 
 h1 {
   color: white;
+  margin-bottom: 25%;
+}
+
+span {
+  color: #FFAD03;
 }

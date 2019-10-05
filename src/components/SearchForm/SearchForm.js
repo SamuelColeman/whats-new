@@ -18,13 +18,13 @@ class SearchForm extends Component {
 
 	render() {
 		return (
-			<form>
+			<form autoComplete="off">
 				<input onChange={this.updateSearch} 
 					type="text"
 					name="search"
 					value={this.state.search}
-					placeholder="Article"/>
-				<button type="submit" onClick={this.handleChange} onSubmit={this.handleChange}>Search
+					placeholder="Search for news article here."/>
+				<button className="searchBtn" type="submit" onClick={this.handleChange} onSubmit={this.handleChange}>Search Now
 				</button>
 			</form>
 		)
