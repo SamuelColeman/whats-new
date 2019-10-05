@@ -7,7 +7,8 @@ class SearchForm extends Component {
 		this.state = { search: ''}
 	}
 
-	handleChange = () => {
+	handleChange = event => {
+		event.preventDefault();
 		this.props.searchArticles(this.state.search);
 	}
 
@@ -23,7 +24,7 @@ class SearchForm extends Component {
 					name="search"
 					value={this.state.search}
 					placeholder="Article"/>
-				<button onClick={this.handleChange} type="button">Search
+				<button onClick={this.handleChange}>Search
 				</button>
 			</form>
 		)
