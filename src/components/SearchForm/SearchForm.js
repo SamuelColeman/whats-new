@@ -24,7 +24,7 @@ class SearchForm extends Component {
 					name="search"
 					value={this.state.search}
 					placeholder="Article"/>
-				<button onClick={this.handleChange}>Search
+				<button type="submit" onClick={this.handleChange} onSubmit={this.handleChange}>Search
 				</button>
 			</form>
 		)
